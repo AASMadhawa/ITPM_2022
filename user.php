@@ -623,6 +623,7 @@ if (isset($_POST["generate_pdf"])) {
 
 
                             <input type="hidden" name="id" id="id2">
+                            <img src="person.jpg" alt="Trulli" width="180" height="180" style="margin-left:131px; margin-bottom:15px">
                             <div class="form-group row">
                                 <div class="col-sm-12 mb-3 mb-sm-0">
                                     <label for="uname" style="color: #000000; font-weight: bolder">User Name</label>

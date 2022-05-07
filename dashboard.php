@@ -260,7 +260,7 @@ session_start();
                 <!-- Content Row -->
                 <div class="row">
 
-                    <!-- Earnings (Monthly) Card Example -->
+                    <!-- Hotels -->
                     <div class="col-xl-4 col-md-6 mb-4">
                         <div class="card border-left-primary shadow h-100 py-2">
                             <div class="card-body">
@@ -286,7 +286,7 @@ session_start();
                         </div>
                     </div>
 
-                    <!-- Earnings (Monthly) Card Example -->
+                    <!-- Vehicals -->
                     <div class="col-xl-4 col-md-6 mb-4">
                         <?php
                         $mysqli = new mysqli('localhost', 'root', '', 'srionus');
@@ -310,11 +310,11 @@ session_start();
                         </div>
                     </div>
 
-                    <!-- Earnings (Monthly) Card Example -->
+                    <!-- Guides -->
                     <div class="col-xl-4 col-md-6 mb-4">
                         <?php
                         $mysqli = new mysqli('localhost', 'root', '', 'srionus');
-                        $result = $mysqli->query("SELECT COUNT(id) AS count FROM employee WHERE status = 'Approved'")->fetch_array();
+                        $result = $mysqli->query("SELECT COUNT(id) AS count FROM guides")->fetch_array();
 
                         ?>
                         <div class="card border-left-info shadow h-100 py-2">
@@ -334,7 +334,7 @@ session_start();
                         </div>
                     </div>
 
-                    <!-- Pending Requests Card Example -->
+                    <!-- Equipment shops -->
                     <div class="col-xl-4 col-md-6 mb-4">
                         <?php
                         $mysqli = new mysqli('localhost', 'root', '', 'srionus');
@@ -358,7 +358,7 @@ session_start();
                         </div>
                     </div>
 
-                    <!-- Contact us messages -->
+                    <!-- Contact Messages -->
                     <div class="col-xl-4 col-md-6 mb-4">
                         <?php
                         $mysqli = new mysqli('localhost', 'root', '', 'srionus');

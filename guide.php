@@ -838,20 +838,25 @@ if (isset($_POST["generate_pdf"])) {
 
 
                             <input type="hidden" name="id" id="id2">
+                            <img src="person.jpg" alt="Trulli" width="180" height="180" style="margin-left:131px; margin-bottom:15px">
+                            <br/>
                             <div class="form-group row">
-                                <div class="col-sm-4 mb-3 mb-sm-0">
+                                <div class="col-sm-12 mb-3 mb-sm-0">
                                     <label for="fullName" style="color: #000000; font-weight: bolder">Full Name</label>
                                     <input type="text" class="form-control " id="fullName2"
                                            value="<?php echo $fullName; ?>"
                                            placeholder="Type Your Full Name" name="fullname"
                                            style="font-weight: lighter">
-                                </div>
-                                <div class="col-sm-4">
+                                </div>  
+                            </div>
+
+                            <div class="form-group row">
+                            <div class="col-sm-6">
                                     <label for="age" style="color: #000000; font-weight: bolder">Age</label>
                                     <input type="number" class="form-control" id="age2" value="<?php echo $age; ?>"
                                            placeholder="Type Your Age" name="age" style="font-weight: lighter">
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-6">
                                     <label for="gender" style="color: #000000; font-weight: bolder">Gender</label>
 
                                     <select class="form-control " id="gender2" value="<?php echo $gender; ?>"
@@ -861,7 +866,7 @@ if (isset($_POST["generate_pdf"])) {
                                         <option value="Female">Female</option>
                                     </select>
                                 </div>
-                            </div>
+                                </div> 
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <label for="birthday" style="color: #000000; font-weight: bolder">Birth Day</label>
