@@ -503,7 +503,7 @@ if (isset($_POST["generate_pdf"])) {
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <form action="./API/guide_registration_api.php" method="POST" enctype="multipart/form-data">
+                        <form id="register-empr-form" action="./API/guide_registration_api.php" method="POST" enctype="multipart/form-data">
 
 
                             <input type="hidden" name="id" value="<?php echo $id; ?>">
@@ -567,54 +567,18 @@ if (isset($_POST["generate_pdf"])) {
                                 <div class="col-sm-4">
                                     <label for="province" style="color: #000000; font-weight: bolder">Province</label>
 
-                                    <select class="form-control " id="province" 
-                                            placeholder="Select Your Province" name="province"
-                                            style="font-weight: lighter" required>
-                                        <option value="Province">Select Province</option>
-                                        <option value="Nothern">Nothern</option>
-                                        <option value="North Western">North Western</option>
-                                        <option value="Western">Western</option>
-                                        <option value="North Central">North Central</option>
-                                        <option value="Central">Central</option>
-                                        <option value="Sabaragamuwa">Sabaragamuwa</option>
-                                        <option value="Eastern">Eastern</option>
-                                        <option value="Uva">Uva</option>
-                                        <option value="Southern">Southern</option>
-                                    </select>
+                                    <select class="form-control " id="province" value="" onchange="getDistrict(this.value)"
+                                    placeholder="Select Your Province" name="province" style="font-weight: lighter"
+                                    required>
+                            </select>
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="district" style="color: #000000; font-weight: bolder">District</label>
 
-                                    <select class="form-control " id="district" 
-                                            placeholder="Select Your District" name="district"
-                                            style="font-weight: lighter" required>
-                                        <option value="District">Select District</option>
-                                        <option value="Jaffna">Jaffna</option>
-                                        <option value="Kilinochchi">Kilinochchi</option>
-                                        <option value="Mannar">Mannar</option>
-                                        <option value="Mullaitivu">Mullaitivu</option>
-                                        <option value="Vavuniya">Vavuniya</option>
-                                        <option value="Puttalam">Puttalam</option>
-                                        <option value="Kurunegala">Kurunegala</option>
-                                        <option value="Gampaha">Gampaha</option>
-                                        <option value="Colombo">Colombo</option>
-                                        <option value="Kalutara">Kalutara</option>
-                                        <option value="Anuradhapura">Anuradhapura</option>
-                                        <option value="Polonnaruwa">Polonnaruwa</option>
-                                        <option value="Matale">Matale</option>
-                                        <option value="Kandy">Kandy</option>
-                                        <option value="Nuwara Eliya">Nuwara Eliya</option>
-                                        <option value="Kegalle">Kegalle</option>
-                                        <option value="Ratnapura">Ratnapura</option>
-                                        <option value="Trincomalee">Trincomalee</option>
-                                        <option value="Batticaloa">Batticaloa</option>
-                                        <option value="Ampara">Ampara</option>
-                                        <option value="Badulla">Badulla</option>
-                                        <option value="Monaragala">Monaragala</option>
-                                        <option value="Hambantota">Hambantota</option>
-                                        <option value="Matara">Matara</option>
-                                        <option value="Galle">Galle</option>
-                                    </select>
+                                    <select class="form-control " id="district" value=""
+                                    placeholder="Select Your District" name="district" style="font-weight: lighter"
+                                    required>
+                            </select>
                                 </div>
                             </div>
                             </br>
@@ -648,7 +612,7 @@ if (isset($_POST["generate_pdf"])) {
                             </br>
                             
 
-                            <button type="submit" class="btn btn-primary" value="Upload" name="REGISTER"
+                            <button type="submit" onclick="registerEmp()" class="btn btn-primary" value="Upload" name="REGISTER"
                                     style="display: flex; text-align: center; margin: auto">Register Guides
                             </button>
                         </form>
@@ -1014,6 +978,8 @@ if (isset($_POST["generate_pdf"])) {
 
 <!-- Page level custom scripts -->
 <script src="js/demo/datatables-demo.js"></script>
+
+<script src="js/employee_register.js"></script>
 
 
 <!-- Delete JS -->

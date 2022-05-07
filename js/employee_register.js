@@ -89,7 +89,6 @@ function submitEmpData(){
 
     var validationRules = {
         rules: {
-            category:{required: true},
             fullname:{required: true},
             age:{required: true},
             gender:{required: true},
@@ -100,11 +99,7 @@ function submitEmpData(){
             district:{required: true},
             nic:{required: true},
             contact:{required: true},
-            job_type:{required: true},
-            resume:{required: true},
-            emp_photo:{required: true},
-            nic_front:{required: true},
-            nic_back:{required: true},
+            
         },
         messages: {
 

@@ -30,7 +30,7 @@ if(isset($_POST['REGISTER'])){
     $nic = $_POST['nic'];
     $contact = $_POST['contact'];
     $emp_photo = $_FILES["emp_photo"]["name"];
-    $nic_front = $_FILES["nic_front"]['name'];
+    
 
     $targetDir = "../../uploads";
     if(is_array($_FILES)) {
