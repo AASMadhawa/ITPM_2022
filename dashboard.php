@@ -73,8 +73,8 @@ session_start();
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">All Features:</h6>
-                    <a class="collapse-item" href="#">View List</a>
-                    <a class="collapse-item" href="#">Generate Report</a>
+                    <a class="collapse-item" href="hotel.php">View List</a>
+                    <a class="collapse-item" href="hotel_report.php">Generate Report</a>
                 </div>
             </div>
         </li>
@@ -267,7 +267,7 @@ session_start();
                             <div class="card-body">
                                 <?php
                                 $mysqli = new mysqli('localhost', 'root', '', 'srionus');
-                                $result = $mysqli->query("SELECT COUNT(id) AS count FROM employee")->fetch_array();
+                                $result = $mysqli->query("SELECT COUNT(id) AS count FROM user")->fetch_array();
 
                                 ?>
 
@@ -291,7 +291,7 @@ session_start();
                     <div class="col-xl-4 col-md-6 mb-4">
                         <?php
                         $mysqli = new mysqli('localhost', 'root', '', 'srionus');
-                        $result = $mysqli->query("SELECT COUNT(id) AS count FROM employee")->fetch_array();
+                        $result = $mysqli->query("SELECT COUNT(id) AS count FROM user")->fetch_array();
 
                         ?>
                         <div class="card border-left-success shadow h-100 py-2">
@@ -339,7 +339,7 @@ session_start();
                     <div class="col-xl-4 col-md-6 mb-4">
                         <?php
                         $mysqli = new mysqli('localhost', 'root', '', 'srionus');
-                        $result = $mysqli->query("SELECT COUNT(id) AS count FROM employee WHERE status = 'Pending'")->fetch_array();
+                        $result = $mysqli->query("SELECT COUNT(id) AS count FROM user ")->fetch_array();
 
                         ?>
                         <div class="card border-left-warning shadow h-100 py-2">

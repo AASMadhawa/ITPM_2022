@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>SRI ONUS - Guide</title>
+    <title>SRI ONUS - Hotel</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -98,14 +98,14 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Find Guides for Your Own Choice</h2>
-                <p>If you want to find proffesional guide for you tour, this is the best place for that. We can provide you a proffesional, honest guide.</p>
+                <h2>Find Hotels for Your Own Choice</h2>
+                <p>If you want to find the best hotel for your stay, this is the best place. We can provide you with the best hotel for your choice.</p>
             </div>
 
 
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h5 class="m-0 font-weight-bold text-primary">GUIDES LIST</h5>
+                    <h5 class="m-0 font-weight-bold text-primary">HOTELS LIST</h5>
                 </div>
                 <div class="card-body">
 
@@ -113,60 +113,56 @@
 
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="100">
-                        <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                        <div class="hotel-img">
+                            <img src="assets/img/Hotel/hotel.jpeg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
-                        <div class="member-info">
-                            <h4>Madhawa Amarasinghe</h4>
-                            <h6>Contact: 0769370712</h6>
-                            <h6>Age: 26</h6>
-                            <h6>District: Kurunegala</h6>
+                        <div class="hotel-info">
+                            <h4>Galadari Hotel</h4>
+                            <h6>Contact: 011 2544544</h6>
+                            <h6>Address: 64, Lotus Rd, Colombo</h6>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="200">
-                        <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                        <div class="hotel-img">
+                            <img src="assets/img/Hotel/hotel.jpeg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
-                        <div class="member-info">
-                            <h4>Pubudu De Silva</h4>
-                            <h6>Contact: 0782653450</h6>
-                            <h6>Age: 27</h6>
-                            <h6>District: Matara</h6>
+                        <div class="hotel-info">
+                            <h4>Hilton Colombo</h4>
+                            <h6>Contact: 011 2492492</h6>
+                            <h6>Address: 2, Sir Chittampalam A Gardiner Mawatha, Colombo</h6>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="300">
-                        <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
-                            
+                        <div class="hotel-img">
+                            <img src="assets/img/Hotel/hotel.jpeg" class="img-fluid" alt="" style="width:200px">
+                    
                         </div>
-                        <div class="member-info">
-                            <h4>Asanka Senanayaka</h4>
-                            <h6>Contact: 0714569830</h6>
-                            <h6>Age: 27</h6>
-                            <h6>District: Kaluthara</h6>
+                        <div class="hotel-info">
+                            <h4>Jetwing Beach</h4>
+                            <h6>Contact: 031 2273500</h6>
+                            <h6>Address: 6RVR+FMR, Porutota Road, Ethukale, Negombo</h6>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="400">
-                        <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                        <div class="hotel-img">
+                            <img src="assets/img/Hotel/hotel.jpeg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
-                        <div class="member-info">
-                            <h4>Sajith Perera</h4>
-                            <h6>Contact: 0728695487</h6>
-                            <h6>Age: 34</h6>
-                            <h6>District: Galle</h6>
+                        <div class="hotel-info">
+                            <h4>Heritance Kandalama</h4>
+                            <h6>Contact: 066 5555000</h6>
+                            <h6>Address: Heritance Kandalama 11, Dambulla</h6>
                         </div>
                     </div>
                 </div>
@@ -176,60 +172,56 @@
 
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="100">
-                        <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                        <div class="hotel-img">
+                            <img src="assets/img/Hotel/hotel.jpeg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
-                        <div class="member-info">
-                            <h4>Geramy Coorey</h4>
-                            <h6>Contact: 0747585945</h6>
-                            <h6>Age: 39</h6>
-                            <h6>District: Badulla</h6>
+                        <div class="hotel-info">
+                            <h4>Weligama Bay Marriott Resort & Spa</h4>
+                            <h6>Contact: 041 4600100</h6>
+                            <h6>Address: 700, Matara Road, Pelana, Weligama</h6>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="200">
-                        <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                        <div class="hotel-img">
+                            <img src="assets/img/Hotel/hotel.jpeg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
-                        <div class="member-info">
-                            <h4>Sahan Middeniya</h4>
-                            <h6>Contact: 0714589751</h6>
-                            <h6>Age: 29</h6>
-                            <h6>District: Kandy</h6>
+                        <div class="hotel-info">
+                            <h4>The Kingsbury Colombo</h4>
+                            <h6>Contact: 011 2421221</h6>
+                            <h6>Address: 48, Janadhipathi Mawatha, Colombo</h6>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="300">
-                        <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                        <div class="hotel-img">
+                            <img src="assets/img/Hotel/hotel.jpeg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
-                        <div class="member-info">
-                            <h4>Charith Jayathilaka</h4>
-                            <h6>Contact: 0769526842</h6>
-                            <h6>Age: 31</h6>
-                            <h6>District: Anuradhapura</h6>
+                        <div class="hotel-info">
+                            <h4>Taj Samudra, Colombo</h4>
+                            <h6>Contact: 011 2446622</h6>
+                            <h6>Address: 25, Galle Face Center Rd, Colombo</h6>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="400">
-                        <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                        <div class="hotel-img">
+                            <img src="assets/img/Hotel/hotel.jpeg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
-                        <div class="member-info">
-                            <h4>Shiv Nadeshan</h4>
-                            <h6>Contact: 0718457810</h6>
-                            <h6>Age: 36</h6>
-                            <h6>District: Trincomalee</h6>
+                        <div class="hotel-info">
+                            <h4>Shangri-La Hotel, Hambantota</h4>
+                            <h6>Contact: 047 7888888</h6>
+                            <h6>Address: Sittrakala Estate, Chithragala, Ambalantota</h6>
                         </div>
                     </div>
                 </div>
@@ -252,7 +244,7 @@
 
             <div class="text-center">
                 <h3>Are You Interested to Join With Us???</h3>
-                <p>  Are You a Guide? Do you have Hotels ?, Guide Vehicles ?, Equipment Shops ?.</p>
+                <p>  Are You a Guide? Do you have Hotels? Guide Vehicles? Equipment Shops?</p>
                 <a class="cta-btn scrollto" href="./index.php#contacts">Join With Us</a>
             </div>
 

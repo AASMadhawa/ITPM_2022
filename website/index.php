@@ -100,11 +100,7 @@
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
         <div class="carousel-inner" role="listbox">
-            <?php
-            $mysqli = new mysqli('localhost', 'root', '', 'srionus') or die (mysqli_error($mysqli));
-            $resultCat = $mysqli->query("SELECT * FROM category WHERE cat_status = 'Active'") or die($mysqli->error);
-            //pre_r($result);
-            ?>
+            
 
             <!-- Slide 1 -->
             <div class="carousel-item active" style="background-image: url(assets/img/slide/Sigiriya.png)">
@@ -283,7 +279,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
                     <div class="icon"><i class="fa-solid fa-hotel"></i></div>
-                    <h4 class="title"><a href="#">Hotels</a></h4>
+                    <h4 class="title"><a href="hotel.php">Hotels</a></h4>
                     <p class="description">Find Best Hotels for Best Price.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
