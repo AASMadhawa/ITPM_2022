@@ -284,7 +284,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
                     <div class="icon"><i class="fa-solid fa-bus"></i></div>
-                    <h4 class="title"><a href="#">Vehicles</a></h4>
+                    <h4 class="title"><a href="vehicle.php">Vehicles</a></h4>
                     <p class="description">Chose your travelling partner with confident.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
