@@ -1,6 +1,6 @@
 <?php   
     require_once('./controllers/DatabaseController.php'); 
-    $db = new EquipmentController();
+    $db = new ShopController();
     $body = $db->getShopRecords();
 ?>
 <!DOCTYPE html>
@@ -14,7 +14,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.js"></script>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
@@ -34,13 +33,6 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.js"></script>
     <title>Equipment Management System</title>
 
     <style type="text/css">
@@ -66,7 +58,7 @@
         }
 
         .back {
-            /* background-color: #a1acae; */
+            /* background-color: #a3bcc1; */
             background-image: url("images/back.jpg");
             background-repeat: no-repeat;
             background-size: cover;
@@ -100,10 +92,9 @@
 
 <body class="back">
 
-
-    <nav class="navbar navbar-expand-lg  bg-dark mb-5">
+    <nav class="navbar navbar-expand-lg  bg-dark">
         <div class="container-fluid fcolor">
-            <a class="navbar-brand" href="index.php">Equipment Management System </a>
+            <a class="navbar-brand" href="index.php">Equipment Management System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -123,9 +114,13 @@
 
 
 
+
+
+
     <div class="container tablecontainer mt-5">
         <h1 class="display-5">Shops</h1>
         <a class="btn btn-primary mt-3 d-block mb-5" href="add_shop.php" role="button">Add Shop</a>
+        <hr>
         <table id='user_table' class="table table-hover align-items-center table-flush mt-3 wrap">
             <thead>
                 <tr>
@@ -134,6 +129,8 @@
                     <td>Location</td>
                     <td>Address</td>
                     <td>Photo</td>
+                    <td>Edit</td>
+                    <td>Delete</td>
                 </tr>
             </thead>
             <tbody>
@@ -155,6 +152,14 @@
                         <?php echo $data_new['address'] ?>
                     </td>
                     <td><img src="images/<?php echo $data_new['photo'] ?>" class="img-thumbnail" alt="Cinque Terre">
+                    </td>
+                    <td><a class="btn btn-success" href="edit_shop.php?edit=<?php echo $data_new['id'] ?>"
+                            role="button">Edit</a></td>
+                    <td>
+                        <?php $db->deleteRecords($data_new['id']) ?>
+                        <form method=POST>
+                            <button type="submit" name="btn_save" class="btn btn-danger mt-3">Delete</button>
+                        </form>
                     </td>
                 </tr>
                 <?php

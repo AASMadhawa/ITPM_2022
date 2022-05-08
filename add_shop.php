@@ -98,7 +98,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="index.php">Equipment Shop's Report</a>
+                        <a class="nav-link text-light" href="shops.php">Equipment Shop's Report</a>
                     </li>
                 </ul>
             </div>
