@@ -98,14 +98,14 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Find Guides for Your Own Choice</h2>
-                <p>If you want to find proffesional guide for you tour, this is the best place for that. We can provide you a proffesional, honest guide.</p>
+                <h2>Find Vehicle for Your Own Choice</h2>
+                <p>If you want to find Vehicle for you tour, this is the best place for that. We can provide you a Vehicle.</p>
             </div>
 
 
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h5 class="m-0 font-weight-bold text-primary">GUIDES LIST</h5>
+                    <h5 class="m-0 font-weight-bold text-primary">VEHICLE LIST</h5>
                 </div>
                 <div class="card-body">
 
@@ -114,13 +114,14 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="100">
                         <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                            <img src="assets/img/car.jpg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
                         <div class="member-info">
-                            <h4>Madhawa Amarasinghe</h4>
+                            <h4>Alto</h4>
+                            <h6>R P Marasinghe</h6>
                             <h6>Contact: 0769370712</h6>
-                            <h6>Age: 26</h6>
+                            <h6>Capacity: 4 persons</h6>
                             <h6>District: Kurunegala</h6>
                         </div>
                     </div>
@@ -129,28 +130,29 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="200">
                         <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                        <img src="assets/img/car.jpg" class="img-fluid" alt="" style="width:200px">
                             
-                        </div>
-                        <div class="member-info">
-                            <h4>Pubudu De Silva</h4>
-                            <h6>Contact: 0782653450</h6>
-                            <h6>Age: 27</h6>
-                            <h6>District: Matara</h6>
-                        </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Maruti</h4>
+                                <h6>Contact: 0721234534</h6>
+                                <h6>Capacity: 4 persons</h6>
+                                <h6>District: Kegalle</h6>
+                            </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="300">
                         <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                            <img src="assets/img/car.jpg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
                         <div class="member-info">
-                            <h4>Asanka Senanayaka</h4>
+                            <h4>Vezel</h4>
+                            <h6>D D Rajapaksha</h6>
                             <h6>Contact: 0714569830</h6>
-                            <h6>Age: 27</h6>
+                            <h6>Capacity: 6 persons</h6>
                             <h6>District: Kaluthara</h6>
                         </div>
                     </div>
@@ -159,14 +161,15 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="400">
                         <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                            <img src="assets/img/car.jpg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
                         <div class="member-info">
-                            <h4>Sajith Perera</h4>
+                            <h4>Prius</h4>
+                            <h6>H A Munasinghe</h6>
                             <h6>Contact: 0728695487</h6>
-                            <h6>Age: 34</h6>
-                            <h6>District: Galle</h6>
+                            <h6>Capacity: 5 persons</h6>
+                            <h6>District: Colombo</h6>
                         </div>
                     </div>
                 </div>
@@ -177,13 +180,13 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="100">
                         <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                            <img src="assets/img/car.jpg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
                         <div class="member-info">
-                            <h4>Geramy Coorey</h4>
+                            <h4>Honda fit</h4>
                             <h6>Contact: 0747585945</h6>
-                            <h6>Age: 39</h6>
+                            <h6>Capacity :5 persons</h6>
                             <h6>District: Badulla</h6>
                         </div>
                     </div>
@@ -192,14 +195,15 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="200">
                         <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                            <img src="assets/img/car.jpg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
                         <div class="member-info">
-                            <h4>Sahan Middeniya</h4>
+                            <h4>Aqua</h4>
+                            <h6>P L Perera</h6>
                             <h6>Contact: 0714589751</h6>
-                            <h6>Age: 29</h6>
-                            <h6>District: Kandy</h6>
+                            <h6>Capacity :5 persons</h6>
+                            <h6>District: Nuwara Eliya</h6>
                         </div>
                     </div>
                 </div>
@@ -207,14 +211,15 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="300">
                         <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                            <img src="assets/img/car.jpg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
                         <div class="member-info">
-                            <h4>Charith Jayathilaka</h4>
+                            <h4>Kwid</h4>
+                            <h6>A B Senanayake</h6>
                             <h6>Contact: 0769526842</h6>
-                            <h6>Age: 31</h6>
-                            <h6>District: Anuradhapura</h6>
+                            <h6>Capacity :5 persons</h6>
+                            <h6>District: Nuwara Eliya</h6>
                         </div>
                     </div>
                 </div>
@@ -222,13 +227,14 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                     <div class="member" data-aos="fade-up" data-aos-delay="400">
                         <div class="member-img">
-                            <img src="assets/img/Guide/person.jpg" class="img-fluid" alt="" style="width:200px">
+                            <img src="assets/img/car.jpg" class="img-fluid" alt="" style="width:200px">
                             
                         </div>
                         <div class="member-info">
-                            <h4>Shiv Nadeshan</h4>
+                            <h4>nissan sunny</h4>
+                            <h6>T A Fenando</h6>
                             <h6>Contact: 0718457810</h6>
-                            <h6>Age: 36</h6>
+                            <h6>Capacity : persons</h6>
                             <h6>District: Trincomalee</h6>
                         </div>
                     </div>
