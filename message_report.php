@@ -8,28 +8,17 @@ function fetch_data()
 {
     $output = '';
     $conn = mysqli_connect("localhost", "root", "", "srionus");
-    $sql = "SELECT * FROM guides ORDER BY id ASC";
+    $sql = "SELECT * FROM contact ORDER BY id ASC";
     $result = mysqli_query($conn, $sql);
     while ($row = mysqli_fetch_array($result)) {
         $output .= '<tr>  
                            
                            
                           <td>' . $row["id"] . '</td>
-                          <td>' . $row["category"] . '</td> 
-                          <td>' . $row["fullname"] . '</td>
-                          <td>' . $row["age"] . '</td>
-                          <td>' . $row["gender"] . '</td>
-                          <td>' . $row["birthday"] . '</td>
+                          <td>' . $row["name"] . '</td> 
                           <td>' . $row["email"] . '</td>
-                          <td>' . $row["address"] . '</td>
-                          <td>' . $row["province"] . '</td>
-                          <td>' . $row["district"] . '</td>
-                          <td>' . $row["nic"] . '</td>
-                          <td>' . $row["contact"] . '</td>
-                          <td>' . $row["experience"] . '</td>
-                          <td>' . $row["language"] . '</td>
-                          <td>' . $row["OtherSkills"] . '</td>
-                          
+                          <td>' . $row["subject"] . '</td>
+                          <td>' . $row["message"] . '</td>
                             
                      </tr>  
                           ';
@@ -41,7 +30,7 @@ if (isset($_POST["generate_pdf"])) {
     require_once('tcpdf/tcpdf.php');
     $obj_pdf = new TCPDF('L', PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
     $obj_pdf->SetCreator(PDF_CREATOR);
-    $obj_pdf->SetTitle("Guides Report");
+    $obj_pdf->SetTitle("Message Details Report");
     $obj_pdf->SetHeaderData('', '', PDF_HEADER_TITLE, PDF_HEADER_STRING);
     $obj_pdf->setHeaderFont(array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
     $obj_pdf->setFooterFont(array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
@@ -55,29 +44,18 @@ if (isset($_POST["generate_pdf"])) {
     $obj_pdf->AddPage();
     $content = '';
     $content .= '
-      <h2 align="center">Report of Guides</h2>
+      <h2 align="center">Report of Messages</h2>
       <br /> 
       <br />
       <table border="2" cellspacing="0" cellpadding="3">  
            <tr>  
                  
                   
-                <th width="3%">id</th>
-                <th width="10%">category</th> 
-                <th width="10%">fullName</th>
-                <th width="3%">age</th>
-                <th width="6%">gender</th>  
-                <th width="8%">birthday</th>  
-                <th width="7%">email</th>  
-                <th width="7%">address</th>  
-                <th width="7%">province</th>  
-                <th width="7%">district</th>  
-                <th width="7%">nic</th>  
-                <th width="7%">contact</th>  
-                <th width="6%">experience</th>  
-                <th width="6%">language</th>  
-                <th width="6%">OtherSkills</th>     
-                 
+                <th width="6%">Id</th>
+                <th width="19%">Name</th> 
+                <th width="15%">Email</th>
+                <th width="30%">Subject</th>
+                <th width="30%">Message</th>
                  
            </tr>  
       
@@ -101,7 +79,7 @@ if (isset($_POST["generate_pdf"])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>User</title>
+    <title>Messege Report</title>
     <!-- Favicons -->
     <link href="./img/favicon.png" rel="icon">
 
@@ -169,7 +147,7 @@ if (isset($_POST["generate_pdf"])) {
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">All Features:</h6>
-                    <a class="collapse-item" href="care_giver_list.php">View List</a>
+                    <a class="collapse-item" href="#.php">View List</a>
                     <a class="collapse-item" href="#">Generate Report</a>
                 </div>
             </div>
@@ -187,7 +165,7 @@ if (isset($_POST["generate_pdf"])) {
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">All Features:</h6>
-                    <a class="collapse-item" href="./seeker_list.php">View List</a>
+                    <a class="collapse-item" href=".#.php">View List</a>
                 </div>
             </div>
         </li>
@@ -219,7 +197,7 @@ if (isset($_POST["generate_pdf"])) {
             <div id="collapsemessagea" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">All Features:</h6>
-                    <a class="collapse-item" href="messages.php">View shops List</a>
+                    <a class="collapse-item" href="#">View shops List</a>
                     <a class="collapse-item" href="#">Generate Report</a>
                 </div>
             </div>
@@ -238,7 +216,6 @@ if (isset($_POST["generate_pdf"])) {
                     <h6 class="collapse-header">All Features:</h6>
                     <a class="collapse-item" href="user.php">User List</a>
                     <a class="collapse-item" href="user_report.php">Generate Report</a>
-                    
                 </div>
             </div>
         </li>
@@ -373,7 +350,7 @@ if (isset($_POST["generate_pdf"])) {
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Admin list</h1>
+                <h1 class="h3 mb-2 text-gray-800">Message Details Report</h1>
                 <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                     For more information about DataTables, please visit the <a target="_blank"
                         href="https://datatables.net">official DataTables documentation</a>.</p> -->
@@ -382,11 +359,8 @@ if (isset($_POST["generate_pdf"])) {
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Full Detailed Admin List</h6>
-                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal"
-                                style="float: right; margin-top: -25px">
-                            <i class="fa fa-plus"></i> REGISTER
-                        </button>
+                        <h6 class="m-0 font-weight-bold text-primary">Full Detailed Message List</h6>
+                        
                     </div>
 
 
@@ -395,31 +369,29 @@ if (isset($_POST["generate_pdf"])) {
 
                             <?php
                             $mysqli = new mysqli('localhost', 'root', '', 'srionus') or die (mysqli_error($mysqli));
-                            $result = $mysqli->query("SELECT * FROM user") or die($mysqli->error);
+                            $result = $mysqli->query("SELECT * FROM contact") or die($mysqli->error);
                             //pre_r($result);
                             ?>
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
-                                    <th>id</th>
-                                    <th>User Name</th>
+                                    <th>ID</th>
+                                    <th>Name</th>
                                     <th>Email</th>
-                                    <th>Edit</th>
-                                    <!-- <th>Delete</th> -->
-                                    <th>View</th>
-                                    <th>Delete</th>
+                                    <th>Subject</th>
+                                    <th>Message</th>
+                                    
                                 </tr>
                                 </thead>
                                 <tfoot>
 
                                 <tr>
-                                    <th>id</th>
-                                    <th>User Name</th>
+                                <th>ID</th>
+                                    <th>Name</th>
                                     <th>Email</th>
-                                    <th>Edit</th>
-                                    <!-- <th>Delete</th> -->
-                                    <th>View</th>
-                                    <th>Delete</th>
+                                    <th>Subject</th>
+                                    <th>Message</th>
+                                    
                                 </tr>
                                 </tfoot>
                                 <tbody>
@@ -427,20 +399,13 @@ if (isset($_POST["generate_pdf"])) {
                                 while ($row = $result->fetch_assoc()):?>
                                     <tr>
                                         <td><?php echo $row['id']; ?></td>
-                                        <td><?php echo $row['uname']; ?></td>
+                                        <td><?php echo $row['name']; ?></td>
                                         <td><?php echo $row['email']; ?></td>
+                                        <td><?php echo $row['subject']; ?></td>
+                                        <td><?php echo $row['message']; ?></td>
 
-                                        <td><a href="#" class="btn btn-warning btn-circle editbtn">
-                                                <i class="fas fa-edit"></i>
-                                            </a></td>
-
-                                        <td><a href="#" class="btn btn-info btn-circle viewbtn">
-                                                <i class="fas fa-eye"></i>
-                                            </a></td>
-                                        <td><a href="#" class="btn btn-danger btn-circle deletebtn">
-                                                <i class="fas fa-trash"></i>
-                                            </a></td>
-
+                                        
+                                       
 
                                     </tr>
                                 <?php endwhile; ?>
@@ -462,6 +427,11 @@ if (isset($_POST["generate_pdf"])) {
 
             </div>
             <!-- /.container-fluid -->
+            <div class="container">
+                        <form method="post" style="text-align: center">
+                            <button class="btn btn-info" type="submit" data-toggle="modal" name="generate_pdf"><i class="fa fa-plus"></i>  Generate Report</button>
+                        </form>
+                    </div>
 
         </div>
 
@@ -674,10 +644,10 @@ if (isset($_POST["generate_pdf"])) {
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title text-center">Delete User Details</h4>
+                        <h4 class="modal-title text-center">Delete Message Details</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <form action="./API/user_delete_api.php" method="POST" enctype="multipart/form-data">
+                    <form action="./API/message_delete_api.php" method="POST" enctype="multipart/form-data">
 
                         <div class="modal-body">
                             <input type="hidden" name="delete_id" id="delete_id">

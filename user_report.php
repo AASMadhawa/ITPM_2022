@@ -232,6 +232,7 @@ if (isset($_POST["generate_pdf"])) {
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">All Features:</h6>
                     <a class="collapse-item" href="messages.php">View Message List</a>
+                    <a class="collapse-item" href="message_report.php">Generate Report</a>
                 </div>
             </div>
         </li>
