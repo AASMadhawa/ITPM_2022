@@ -230,7 +230,7 @@ if (isset($_POST["generate_pdf"])) {
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">All Features:</h6>
                     <a class="collapse-item" href="user.php">User List</a>
-                    <a class="collapse-item" href="#">Generate Report</a>
+                    <a class="collapse-item" href="user_report.php">Generate Report</a>
                 </div>
             </div>
         </li>
@@ -395,34 +395,34 @@ if (isset($_POST["generate_pdf"])) {
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
-                                    <th>id</th>
-                                    <th>fullName</th>
-                                    <th>age</th>
-                                    <th>gender</th>
-                                    <th>birthday</th>
-                                    <th>email</th>
-                                    <th>address</th>
-                                    <th>province</th>
-                                    <th>district</th>
-                                    <th>nic</th>
-                                    <th>contact</th>
+                                    <th>ID</th>
+                                    <th>Full Name</th>
+                                    <th>Age</th>
+                                    <th>Gender</th>
+                                    <th>Birthday</th>
+                                    <th>Email</th>
+                                    <th>Address</th>
+                                    <th>Province</th>
+                                    <th>District</th>
+                                    <th>NIC</th>
+                                    <th>Contact</th>
                                     
                                 </tr>
                                 </thead>
                                 <tfoot>
 
                                 <tr>
-                                    <th>id</th>
-                                    <th>fullName</th>
-                                    <th>age</th>
-                                    <th>gender</th>
-                                    <th>birthday</th>
-                                    <th>email</th>
-                                    <th>address</th>
-                                    <th>province</th>
-                                    <th>district</th>
-                                    <th>nic</th>
-                                    <th>contact</th>
+                                    <th>ID</th>
+                                    <th>Full Name</th>
+                                    <th>Age</th>
+                                    <th>Gender</th>
+                                    <th>Birthday</th>
+                                    <th>Email</th>
+                                    <th>Address</th>
+                                    <th>Province</th>
+                                    <th>District</th>
+                                    <th>NIC</th>
+                                    <th>Contact</th>
                                     
                                 </tr>
                                 </tfoot>

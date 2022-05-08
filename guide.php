@@ -169,7 +169,7 @@ if (isset($_POST["generate_pdf"])) {
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">All Features:</h6>
-                    <a class="collapse-item" href="care_giver_list.php">View List</a>
+                    <a class="collapse-item" href="hotel.php">View List</a>
                     <a class="collapse-item" href="#">Generate Report</a>
                 </div>
             </div>
@@ -237,7 +237,7 @@ if (isset($_POST["generate_pdf"])) {
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">All Features:</h6>
                     <a class="collapse-item" href="user.php">User List</a>
-                    <a class="collapse-item" href="#">Generate Report</a>
+                    <a class="collapse-item" href="user_report.php">Generate Report</a>
                 </div>
             </div>
         </li>
@@ -399,17 +399,17 @@ if (isset($_POST["generate_pdf"])) {
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
-                                    <th>id</th>
-                                    <th>fullName</th>
-                                    <th>age</th>
-                                    <th>gender</th>
-                                    <th>birthday</th>
-                                    <th>email</th>
-                                    <th>address</th>
-                                    <th>province</th>
-                                    <th>district</th>
-                                    <th>nic</th>
-                                    <th>contact</th>
+                                    <th>ID</th>
+                                    <th>Full Name</th>
+                                    <th>Age</th>
+                                    <th>Gender</th>
+                                    <th>Birthday</th>
+                                    <th>Email</th>
+                                    <th>Address</th>
+                                    <th>Province</th>
+                                    <th>District</th>
+                                    <th>NIC</th>
+                                    <th>Contact</th>
                                     <th>Edit</th>
                                     <!-- <th>Delete</th> -->
                                     <th>View</th>
@@ -419,17 +419,17 @@ if (isset($_POST["generate_pdf"])) {
                                 <tfoot>
 
                                 <tr>
-                                    <th>id</th>
-                                    <th>fullName</th>
-                                    <th>age</th>
-                                    <th>gender</th>
-                                    <th>birthday</th>
-                                    <th>email</th>
-                                    <th>address</th>
-                                    <th>province</th>
-                                    <th>district</th>
-                                    <th>nic</th>
-                                    <th>contact</th>
+                                    <th>ID</th>
+                                    <th>Full Name</th>
+                                    <th>Age</th>
+                                    <th>Gender</th>
+                                    <th>Birthday</th>
+                                    <th>Email</th>
+                                    <th>Address</th>
+                                    <th>Province</th>
+                                    <th>District</th>
+                                    <th>NIC</th>
+                                    <th>Contact</th>
                                     <th>Edit</th>
                                     <!-- <th>Delete</th> -->
                                     <th>View</th>
@@ -600,7 +600,7 @@ if (isset($_POST["generate_pdf"])) {
                             </div>
                         
                             </br>
-                            <div class="form-group row">
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-12 mb-3 mb-sm-0">
                                     <label for="emp_photo" style="color: #000000; font-weight: bolder">Employee
                                         Photo</label>
@@ -608,7 +608,7 @@ if (isset($_POST["generate_pdf"])) {
                                            
                                            name="emp_photo" style="font-weight: lighter" required>
                                 </div>
-                            </div>
+                            </div> -->
                             </br>
                             
 

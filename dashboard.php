@@ -142,7 +142,7 @@ session_start();
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">All Features:</h6>
                     <a class="collapse-item" href="user.php">User List</a>
-                    <a class="collapse-item" href="#">Generate Report</a>
+                    <a class="collapse-item" href="user_report.php">Generate Report</a>
                 </div>
             </div>
         </li>

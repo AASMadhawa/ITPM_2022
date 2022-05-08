@@ -652,12 +652,7 @@ if (isset($_POST["generate_pdf"])) {
                                            placeholder="Type Your Password" name="password" value="<?php echo $password; ?>" style="font-weight: lighter"
                                            required>
                                 </div>
-                                <div class="col-sm-6">
-                                    <label for="re_pass" style="color: #000000; font-weight: bolder">Confirm Password</label>
-                                    <input type="password" class="form-control" id="re_pass2" 
-                                           placeholder="Re enter your Password" name="re_pass"
-                                           style="font-weight: lighter" required>
-                                </div>
+                                
                             </div>
                             </br>
                         </form>

@@ -44,7 +44,7 @@ if (isset($_POST["generate_pdf"])) {
     $obj_pdf->AddPage();
     $content = '';
     $content .= '
-      <h2 align="center">Report of Guides</h2>
+      <h2 align="center">Report of User Details</h2>
       <br /> 
       <br />
       <table border="2" cellspacing="0" cellpadding="3">  
