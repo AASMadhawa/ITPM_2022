@@ -2,9 +2,9 @@
 
 Group ID : REG_WE_84
 
-Members: IT17059428 Amarasinghe A.A.S.M
-         IT15036230 B.L.U.K.Kumari
-         IT18123364 A.G.D.J.Premarathne
+Members: IT17059428 Amarasinghe A.A.S.M, 
+         IT15036230 B.L.U.K.Kumari, 
+         IT18123364 A.G.D.J.Premarathne, 
          IT17135108 Jayakody J.R.H.D
 
 ##Description##
